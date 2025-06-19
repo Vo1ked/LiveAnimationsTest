@@ -26,8 +26,10 @@ namespace LiveAnimationTest
             
         }
 
-        private void LocaleSelected(int index)
+        private async void LocaleSelected(int index)
         {
+            await LocalizationSettings.InitializationOperation.Task;
+   
             LocalizationSettings.SelectedLocale = LocalizationSettings.AvailableLocales.Locales[index];
         }
     }
