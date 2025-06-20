@@ -36,7 +36,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 5152090640384
-    m_Key: New Entry
+    m_Key: English
+    m_Metadata:
+      m_Items: []
+  - m_Id: 266147702788096
+    m_Key: Ukrainian
     m_Metadata:
       m_Items: []
   m_Metadata:

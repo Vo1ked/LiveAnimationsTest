@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Localization.Settings;
 using TMPro;
+using UnityEngine.Localization.Components;
 using VolkCore.UI;
 
 namespace LiveAnimationTest
@@ -20,6 +21,7 @@ namespace LiveAnimationTest
                 var currentLanguage = Instantiate(buttonPrefab, buttonsParent);
                 currentLanguage.name = locale.name;
                 currentLanguage.GetComponentInChildren<TMP_Text>().text = locale.name;
+                currentLanguage.GetComponentInChildren<LocalizeStringEvent>().StringReference.TableEntryReference = locale.name;
                 int i1 = i;
                 currentLanguage.onClick.AddListener(()=> LocaleSelected(i1));
             }
