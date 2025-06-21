@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 55c4b51728f8c2d4fb683f1d04d5f8d0
+guid: 95f1ca63e5f5aca4a9a956cf1bf0a2bd
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2621441139477844327
-    second: DBN_0
+      213: 2813274282232148420
+    second: Shine_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 400
+  spritePixelsToUnits: 300
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -165,13 +165,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: DBN_0
+      name: Shine_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 2
-        width: 486
-        height: 573
+        y: 1
+        width: 1080
+        height: 1765
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -180,8 +180,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 99ee3d13c25ce9bd0800000000000000
-      internalID: -2621441139477844327
+      spriteID: 4c17038ed02ca0720800000000000000
+      internalID: 2813274282232148420
       vertices: []
       indices: 
       edges: []
@@ -200,7 +200,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      DBN_0: -2621441139477844327
+      Shine_0: 2813274282232148420
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

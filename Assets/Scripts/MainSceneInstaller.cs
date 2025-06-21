@@ -1,7 +1,9 @@
-﻿using System.ComponentModel;
-using UnityEngine;
+﻿using UnityEngine;
+using VolkCharacters;
+using VolkCharacters.Signals;
 using VolkCore.Game;
 using VolkCore.UI;
+using Zenject;
 
 namespace LiveAnimationTest
 {
@@ -13,9 +15,10 @@ namespace LiveAnimationTest
         {
             if (!CheckAndLogDependencies())
                 return;
-            
+            Container.Bind<IUiLock>().WithId("CharacterSelect")
+                .To<MockUiLock>().FromNew().AsSingle();
             Container.Bind<TopPanel>().FromInstance(_topPanel).AsSingle();
-
+            Container.DeclareSignal<CharacterSelectedSignal>();
         }
     }
 }

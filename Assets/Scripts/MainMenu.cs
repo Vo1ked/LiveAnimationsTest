@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
-using VolkCore.Game.Level;
+using VolkCharacters.Signals;
 using Zenject;
 
 namespace LiveAnimationTest
@@ -12,10 +12,10 @@ namespace LiveAnimationTest
         [SerializeField] private Button _continueButton;
         [SerializeField] private Button _startGameButton;
         [SerializeField] private Button _exitButton;
+        [SerializeField] private GameObject _characterSelectPopup;
 
-        [Inject] IUserLevel _userLevel;
         [Inject] ILevelProgress _levelProgress;
-
+        [Inject] SignalBus _signalBus;
         private void Awake()
         {
             if (_levelProgress.MaxOppenedLevel > 1)
@@ -24,7 +24,14 @@ namespace LiveAnimationTest
                 _continueButton.onClick.AddListener(() => LoadDirectLevel(_levelProgress.MaxOppenedLevel));
             }
             _exitButton.onClick.AddListener(Application.Quit);
-            _startGameButton.onClick.AddListener(()=> LoadDirectLevel(1));
+            _startGameButton.onClick.AddListener(StartNewGame );
+            _signalBus.Subscribe<CharacterSelectedSignal>(()=> LoadDirectLevel(_levelProgress.CurrentLevelId));
+        }
+
+        private void StartNewGame()
+        {
+            _characterSelectPopup.SetActive(true);
+            _levelProgress.CurrentLevelId = 0;
         }
 
         private async void LoadDirectLevel(int selectedLevel)
@@ -32,6 +39,11 @@ namespace LiveAnimationTest
             _levelProgress.CurrentLevelId = selectedLevel;
             await SceneManager.LoadSceneAsync("Game",LoadSceneMode.Additive);
             await SceneManager.UnloadSceneAsync("MainMenu");
+        }
+
+        private void OnDestroy()
+        {
+            _signalBus.TryUnsubscribe<CharacterSelectedSignal>(()=> LoadDirectLevel(1));
         }
 
     }

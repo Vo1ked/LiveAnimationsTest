@@ -74,3 +74,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 553dc280a37d17f44bc8e7e39cae4a8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _playerCharactersData: {fileID: 11400000, guid: 62b27a98f852b924f8a68853ad072e77, type: 2}
+  _manualCreatedLevels: {fileID: 11400000, guid: ad460ac079ce74042b0bd2a0e5aa96fc, type: 2}

@@ -43,6 +43,10 @@ MonoBehaviour:
     m_Key: Ukrainian
     m_Metadata:
       m_Items: []
+  - m_Id: 385010981425152
+    m_Key: Choose
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

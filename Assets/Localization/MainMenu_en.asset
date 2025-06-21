@@ -46,6 +46,10 @@ MonoBehaviour:
     m_Localized: Ukrainian
     m_Metadata:
       m_Items: []
+  - m_Id: 385010981425152
+    m_Localized: Choose
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
