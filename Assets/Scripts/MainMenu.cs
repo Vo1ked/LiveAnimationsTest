@@ -3,6 +3,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using VolkCharacters.Signals;
+using VolkCore.Signals;
 using Zenject;
 
 namespace LiveAnimationTest
@@ -24,8 +25,14 @@ namespace LiveAnimationTest
                 _continueButton.onClick.AddListener(() => LoadDirectLevel(_levelProgress.MaxOppenedLevel));
             }
             _exitButton.onClick.AddListener(Application.Quit);
-            _startGameButton.onClick.AddListener(StartNewGame );
+            _startGameButton.onClick.AddListener(StartNewGame);
             _signalBus.Subscribe<CharacterSelectedSignal>(()=> LoadDirectLevel(_levelProgress.CurrentLevelId));
+            _signalBus.Subscribe<LevelSelectedSignal>(DirectLevelSelected);
+        }
+
+        private void DirectLevelSelected(LevelSelectedSignal obj)
+        {
+            _characterSelectPopup.SetActive(true);
         }
 
         private void StartNewGame()
@@ -33,6 +40,7 @@ namespace LiveAnimationTest
             _characterSelectPopup.SetActive(true);
             _levelProgress.CurrentLevelId = 0;
         }
+        
 
         private async void LoadDirectLevel(int selectedLevel)
         {
