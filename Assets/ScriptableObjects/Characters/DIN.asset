@@ -9,18 +9,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef63739e42c34d358894fe5aceafbc60, type: 3}
+  m_Script: {fileID: 11500000, guid: db1db65623724b38bcf667e6df6125ad, type: 3}
   m_Name: DIN
   m_EditorClassIdentifier: 
   <Name>k__BackingField: DIN
-  <Id>k__BackingField: 0
+  <Id>k__BackingField: 2
   <Available>k__BackingField: 1
+  <Sprite>k__BackingField: {fileID: 21300000, guid: fc049f9f57d224646ae10eea7e06a82c, type: 3}
   <Abilities>k__BackingField: []
-  LastTakenDamage: 0
-  LastHeal: 0
-  startHealth: 1
-  <CurrentHealth>k__BackingField: 1
-  <CharacterSpriteView>k__BackingField:
-    <Id>k__BackingField: 0
-    <Sprite>k__BackingField: {fileID: 21300000, guid: fc049f9f57d224646ae10eea7e06a82c, type: 3}
-  <PlatformColor>k__BackingField: {r: 0, g: 0.12074661, b: 1, a: 0}
+  <StartHealth>k__BackingField: 1
+  <StartPlatformSize>k__BackingField: 4
+  <MaxPlatformSize>k__BackingField: 10
+  <StartBallSpeed>k__BackingField: 30
+  <PlatformColor>k__BackingField: {r: 0.9960785, g: 0.8078432, b: 0.3803922, a: 1}

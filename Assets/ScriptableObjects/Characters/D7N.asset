@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: db1db65623724b38bcf667e6df6125ad, type: 3}
-  m_Name: DZZZN
+  m_Name: D7N
   m_EditorClassIdentifier: 
-  <Name>k__BackingField: DZZZN
-  <Id>k__BackingField: 4
+  <Name>k__BackingField: D7N
+  <Id>k__BackingField: 0
   <Available>k__BackingField: 1
-  <Sprite>k__BackingField: {fileID: 21300000, guid: 022651165b70f12468b703683459831c, type: 3}
+  <Sprite>k__BackingField: {fileID: 21300000, guid: 898cdd5383ec740489fa27072321fb75, type: 3}
   <Abilities>k__BackingField: []
   <StartHealth>k__BackingField: 1
-  <StartPlatformSize>k__BackingField: 1
+  <StartPlatformSize>k__BackingField: 2
   <MaxPlatformSize>k__BackingField: 10
-  <StartBallSpeed>k__BackingField: 7.5
-  <PlatformColor>k__BackingField: {r: 0.06732824, g: 0.68581074, b: 0.8396226, a: 1}
+  <StartBallSpeed>k__BackingField: 15
+  <PlatformColor>k__BackingField: {r: 0.9960785, g: 0.74509805, b: 0.2901961, a: 1}

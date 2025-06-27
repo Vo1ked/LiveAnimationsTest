@@ -10,7 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 6860784448938395365}
   - component: {fileID: 2892779668535557574}
-  - component: {fileID: -3614314054629713983}
+  - component: {fileID: 8024647702863931674}
+  - component: {fileID: 4925726156494057461}
   m_Layer: 0
   m_Name: ProjectContext
   m_TagString: Untagged
@@ -47,7 +48,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _scriptableObjectInstallers: []
   _monoInstallers:
-  - {fileID: -3614314054629713983}
+  - {fileID: 8024647702863931674}
+  - {fileID: 4925726156494057461}
   _installerPrefabs: []
   _parentNewObjectsUnderContext: 1
   _editorReflectionBakingCoverageMode: 0
@@ -62,7 +64,7 @@ MonoBehaviour:
       _missingHandlerDefaultResponse: 2
       _requireStrictUnsubscribe: 0
       _defaultAsyncTickPriority: 1
---- !u!114 &-3614314054629713983
+--- !u!114 &8024647702863931674
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -71,8 +73,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 3338911632081049276}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 553dc280a37d17f44bc8e7e39cae4a8d, type: 3}
+  m_Script: {fileID: 11500000, guid: 27948bc5f970c7d4bba0fbc1d88ff8b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _playerCharactersData: {fileID: 11400000, guid: 62b27a98f852b924f8a68853ad072e77, type: 2}
-  _manualCreatedLevels: {fileID: 11400000, guid: ad460ac079ce74042b0bd2a0e5aa96fc, type: 2}
+--- !u!114 &4925726156494057461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3338911632081049276}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a570a6f0011a4da5ac4585212e9fc1d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _playerCharactersData: {fileID: 11400000, guid: 2eb7dc77abd456a4c9c4168be60fcc43, type: 2}
+  _levels: {fileID: 11400000, guid: ef5d521d742078349a4f6d5c4ad8183b, type: 2}

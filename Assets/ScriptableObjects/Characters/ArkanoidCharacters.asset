@@ -9,11 +9,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e72cd2f1ace94419a81e64773517ccf5, type: 3}
-  m_Name: Characters
+  m_Script: {fileID: 11500000, guid: c3da4d527740470bbbb0b1707a118ad1, type: 3}
+  m_Name: ArkanoidCharacters
   m_EditorClassIdentifier: 
   <Characters>k__BackingField:
   - {fileID: 11400000, guid: 214e1aba51c5fe042833610e9ecf4418, type: 2}
+  - {fileID: 11400000, guid: 1fb5dd0e48a283848b6bc653b9f3a1db, type: 2}
   - {fileID: 11400000, guid: 65d1b96a398548b4cb36a1665f690592, type: 2}
   - {fileID: 11400000, guid: 78fb3eb24c8c8ff46b160e2c0ec55448, type: 2}
   - {fileID: 11400000, guid: 2ecd345129bf2a04da07fbee2a2bcfd2, type: 2}

@@ -9,18 +9,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef63739e42c34d358894fe5aceafbc60, type: 3}
+  m_Script: {fileID: 11500000, guid: db1db65623724b38bcf667e6df6125ad, type: 3}
   m_Name: DZZBN
   m_EditorClassIdentifier: 
   <Name>k__BackingField: DZZBN
-  <Id>k__BackingField: 2
+  <Id>k__BackingField: 3
   <Available>k__BackingField: 1
+  <Sprite>k__BackingField: {fileID: 21300000, guid: 7c23394a8de079b498ed38b1dff5ac77, type: 3}
   <Abilities>k__BackingField: []
-  LastTakenDamage: 0
-  LastHeal: 0
-  startHealth: 1
-  <CurrentHealth>k__BackingField: 1
-  <CharacterSpriteView>k__BackingField:
-    <Id>k__BackingField: 2
-    <Sprite>k__BackingField: {fileID: 21300000, guid: 7c23394a8de079b498ed38b1dff5ac77, type: 3}
-  <PlatformColor>k__BackingField: {r: 0, g: 0.12074661, b: 1, a: 1}
+  <StartHealth>k__BackingField: 1
+  <StartPlatformSize>k__BackingField: 2
+  <MaxPlatformSize>k__BackingField: 10
+  <StartBallSpeed>k__BackingField: 15
+  <PlatformColor>k__BackingField: {r: 0.26666668, g: 0.7607844, b: 0.24705884, a: 1}

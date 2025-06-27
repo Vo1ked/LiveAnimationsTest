@@ -21,7 +21,6 @@ namespace LiveAnimationTest
             Container.Bind<TopPanel>().FromInstance(_topPanel).AsSingle();
             Container.DeclareSignal<CharacterSelectedSignal>();
             Container.DeclareSignal<LevelSelectedSignal>();
-            
         }
     }
 }
