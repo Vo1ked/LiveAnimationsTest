@@ -35,6 +35,10 @@ MonoBehaviour:
     m_Key: NextLevel
     m_Metadata:
       m_Items: []
+  - m_Id: 27658511994880
+    m_Key: Win
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

@@ -15,7 +15,7 @@ MonoBehaviour:
   <Name>k__BackingField: D7N
   <Id>k__BackingField: 0
   <Available>k__BackingField: 1
-  <Sprite>k__BackingField: {fileID: 21300000, guid: 898cdd5383ec740489fa27072321fb75, type: 3}
+  <Sprite>k__BackingField: {fileID: 21300000, guid: bdfde04e83499294abbd3144e974185b, type: 3}
   <Abilities>k__BackingField: []
   <StartHealth>k__BackingField: 1
   <StartPlatformSize>k__BackingField: 2

@@ -42,11 +42,10 @@ namespace LiveAnimationTest
         }
         
 
-        private async void LoadDirectLevel(int selectedLevel)
+        private void LoadDirectLevel(int selectedLevel)
         {
             _levelProgress.CurrentLevelId = selectedLevel;
-            await SceneManager.LoadSceneAsync("Game",LoadSceneMode.Additive);
-            await SceneManager.UnloadSceneAsync("MainMenu");
+            SceneManager.LoadScene("Game",LoadSceneMode.Single);
         }
 
         private void OnDestroy()

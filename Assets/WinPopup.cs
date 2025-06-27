@@ -2,22 +2,30 @@ using Save;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
-using VolkCore.Save;
+using VolkArkanoid.Signals;
 using Zenject;
 
 namespace LiveAnimationTest
 {
     public class WinPopup : MonoBehaviour
     {
-        [SerializeField] private Button _repeat;
+        [SerializeField] private Button _nextLevel;
         [SerializeField] private Button _main;
+        [SerializeField] private GameObject _popup;
         
         [Inject] private ILevelProgress _levelProgress;
+        [Inject] private SignalBus _signalBus;
 
         private void Awake()
         {
-            _repeat.onClick.AddListener(Nextlevel);
+            _nextLevel.onClick.AddListener(Nextlevel);
             _main.onClick.AddListener(ToMainMenu);
+            _signalBus.Subscribe<GameWinSignal>(ShowPopup);
+        }
+
+        private void ShowPopup()
+        {
+            _popup.SetActive(true);
         }
 
         private void Nextlevel()
