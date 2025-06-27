@@ -50,6 +50,14 @@ MonoBehaviour:
     m_Localized: Choose
     m_Metadata:
       m_Items: []
+  - m_Id: 2864083943051264
+    m_Localized: Music
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2864789538230272
+    m_Localized: Sound
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
