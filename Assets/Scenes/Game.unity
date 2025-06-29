@@ -560,6 +560,14 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 703402044419294784, guid: 7a826381e1256a9429f6eba84999df55, type: 3}
+      propertyPath: _backgroundClip
+      value: 
+      objectReference: {fileID: 8300000, guid: dd81452ba0ff0d641a345accc79f8038, type: 3}
+    - target: {fileID: 1784577400625481624, guid: 7a826381e1256a9429f6eba84999df55, type: 3}
+      propertyPath: buttonClickSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 8486169567543144e84e3ee771e62804, type: 3}
     - target: {fileID: 2484417567711540424, guid: 7a826381e1256a9429f6eba84999df55, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -656,6 +664,14 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3291061704494777118, guid: 7a826381e1256a9429f6eba84999df55, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: dd81452ba0ff0d641a345accc79f8038, type: 3}
+    - target: {fileID: 3291061704494777118, guid: 7a826381e1256a9429f6eba84999df55, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: dd81452ba0ff0d641a345accc79f8038, type: 3}
     - target: {fileID: 3889081203786094661, guid: 7a826381e1256a9429f6eba84999df55, type: 3}
       propertyPath: m_Name
       value: TopPanelArkanoid
@@ -672,6 +688,14 @@ PrefabInstance:
       propertyPath: _gameCamera
       value: 
       objectReference: {fileID: 2098829765}
+    - target: {fileID: 5721966976031450996, guid: 7a826381e1256a9429f6eba84999df55, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: 8486169567543144e84e3ee771e62804, type: 3}
+    - target: {fileID: 5721966976031450996, guid: 7a826381e1256a9429f6eba84999df55, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 8486169567543144e84e3ee771e62804, type: 3}
     - target: {fileID: 6258617164206185852, guid: 7a826381e1256a9429f6eba84999df55, type: 3}
       propertyPath: m_IsActive
       value: 0
