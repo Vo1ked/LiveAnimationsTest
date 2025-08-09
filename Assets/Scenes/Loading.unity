@@ -590,7 +590,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f638b21d93217d48abdc2e7a3676ebb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FakeLoadTime: 0.5
+  FakeLoadTime: 1
   _verticalCanvas: {fileID: 0}
   _horizontalCanvas: {fileID: 1569936561}
 --- !u!114 &908854360

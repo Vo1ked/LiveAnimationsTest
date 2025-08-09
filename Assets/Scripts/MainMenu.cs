@@ -3,6 +3,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using Volk.SceneManagement;
 using VolkCharacters.Signals;
+using VolkCore.SceneManagement.UI;
 using VolkCore.Signals;
 using Zenject;
 
@@ -18,6 +19,7 @@ namespace LiveAnimationTest
         [Inject] ILevelProgress _levelProgress;
         [Inject] SignalBus _signalBus;
         [Inject] ISceneManager<Scenes> _sceneManager;
+        [Inject] ILoadingScreen _loadingScreen;
 
         private bool _loadingInProgress = false;
         private async void Awake()
@@ -52,6 +54,7 @@ namespace LiveAnimationTest
                 return;
             _loadingInProgress = true;
             _levelProgress.SelectLevel(selectedLevel);
+            _loadingScreen.FakeLoad();
             _ = _sceneManager.LoadSceneAsync(Scenes.Game1);
         }
 
