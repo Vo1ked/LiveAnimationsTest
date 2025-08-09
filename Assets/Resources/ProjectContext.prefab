@@ -44,7 +44,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3338911632081049276}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a4e6589720da476459dc6dd71624b071, type: 3}
+  m_Script: {fileID: 11500000, guid: fc2d59c72c36db343a3c7a8754cb1f0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _scriptableObjectInstallers: []
@@ -61,6 +61,7 @@ MonoBehaviour:
     _displayWarningWhenResolvingDuringInstall: 1
     _validationRootResolveMethod: 0
     _validationErrorResponse: 0
+    _constructorChoiceStrategy: 0
     _signalSettings:
       _defaultSyncMode: 0
       _missingHandlerDefaultResponse: 2
@@ -78,6 +79,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27948bc5f970c7d4bba0fbc1d88ff8b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  AplicationName: VolkApplication
+  StartBalance: 10000
 --- !u!114 &4925726156494057461
 MonoBehaviour:
   m_ObjectHideFlags: 0

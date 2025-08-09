@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using VolkCharacters;
 using VolkCharacters.Signals;
-using VolkCore.Game;
+using VolkCore.SceneManagement;
 using VolkCore.Signals;
 using VolkCore.UI;
 using Zenject;
@@ -19,6 +19,7 @@ namespace LiveAnimationTest
             Container.Bind<IUiLock>().WithId("CharacterSelect")
                 .To<MockUiLock>().FromNew().AsSingle();
             Container.Bind<TopPanel>().FromInstance(_topPanel).AsSingle();
+            
             Container.DeclareSignal<CharacterSelectedSignal>();
             Container.DeclareSignal<LevelSelectedSignal>();
         }

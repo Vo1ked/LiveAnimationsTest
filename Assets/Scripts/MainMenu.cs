@@ -1,7 +1,7 @@
 ﻿using Save;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using Volk.SceneManagement;
 using VolkCharacters.Signals;
 using VolkCore.Signals;
 using Zenject;
@@ -17,16 +17,20 @@ namespace LiveAnimationTest
 
         [Inject] ILevelProgress _levelProgress;
         [Inject] SignalBus _signalBus;
-        private void Awake()
+        [Inject] ISceneManager<Scenes> _sceneManager;
+
+        private bool _loadingInProgress = false;
+        private async void Awake()
         {
-            if (_levelProgress.MaxOppenedLevel > 1)
+            await _levelProgress;
+            if (_levelProgress.MaximumAvailableLevel.Value > 1)
             {
                 _continueButton.gameObject.SetActive(true);
-                _continueButton.onClick.AddListener(() => LoadDirectLevel(_levelProgress.MaxOppenedLevel));
+                _continueButton.onClick.AddListener(() => LoadDirectLevel(_levelProgress.MaximumAvailableLevel.Value));
             }
             _exitButton.onClick.AddListener(Application.Quit);
             _startGameButton.onClick.AddListener(StartNewGame);
-            _signalBus.Subscribe<CharacterSelectedSignal>(()=> LoadDirectLevel(_levelProgress.CurrentLevelId));
+            _signalBus.Subscribe<CharacterSelectedSignal>(()=> LoadDirectLevel(_levelProgress.CurrentLevelId.Value));
             _signalBus.Subscribe<LevelSelectedSignal>(DirectLevelSelected);
         }
 
@@ -38,14 +42,17 @@ namespace LiveAnimationTest
         private void StartNewGame()
         {
             _characterSelectPopup.SetActive(true);
-            _levelProgress.CurrentLevelId = 0;
+            _levelProgress.SelectLevel(0);
         }
         
 
         private void LoadDirectLevel(int selectedLevel)
         {
-            _levelProgress.CurrentLevelId = selectedLevel;
-            SceneManager.LoadScene("Game",LoadSceneMode.Single);
+            if (_loadingInProgress)
+                return;
+            _loadingInProgress = true;
+            _levelProgress.SelectLevel(selectedLevel);
+            _ = _sceneManager.LoadSceneAsync(Scenes.Game1);
         }
 
         private void OnDestroy()
